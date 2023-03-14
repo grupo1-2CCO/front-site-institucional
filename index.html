@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paleta</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="main.js"></script>
+    </head>
+    <body onload="carregaPagina()">
+        <header class="margem-pagina">
+            <div class="logotipo">
+                <img class="logo" src="images/logo.svg" alt="Logo do site, uma paleta de arte com 4 cores (lilás e 3 tons de azul)">
+                <h1 class="texto-logo">Paleta®</h1>
+            </div>
+            <img id="abrir-menu" onclick="abrirMenu()" src="images/icones/menu.svg">
+        </header>
+        <section class="home-inicio margem-pagina">
+            <h1 class="titulo">A Paleta te traz a arte desejada, e é o seu melhor portfólio</h1>
+            <h3>Aqui você pode divulgar suas artes e ganhar com isso, ou pode obter a sua imagem por outras pessoas.</h3>
+        </section>
+        <div class="menu">
+            <div class="header-menu">
+                <img class="logo" src="images/logo.svg" alt="Logo do site, uma paleta de arte com 4 cores (lilás e 3 tons de azul)">
+                <h1 class="texto-logo">Paleta®</h1>
+                <img id="fechar-menu" onclick="fecharMenu()" src="images/icones/fechar-menu.svg">
+              </div>
+            <ul>
+              <li><a href="#">Página inicial</a></li>
+              <li><a href="#">Como funciona</a></li>
+              <li><a href="#">Cadastrar <br> como designer</a></li>
+              <li><a href="#">Cadastrar <br> como cliente</a></li>
+              <li><a href="#">Entrar</a></li>
+            </ul>
+        </div>
+        <section class="home-designers">
+            <h2>Designers da plataforma</h2>
+            <div class="card">
+                <div class="info">
+                    <img class="designer-img" src="images/pagina-inicial/designer01.jpg ">
+                    <h3 class="designer-nome">Julia Martins</h3>
+                    <p class="designer-area">Publicidade e propaganda</p>
+                    <div class="designer-avaliacao">
+                        <img src="images/icones/estrela-cheia.svg">
+                        <img src="images/icones/estrela-cheia.svg">
+                        <img src="images/icones/estrela-cheia.svg">
+                        <img src="images/icones/estrela-cheia.svg">
+                        <img src="images/icones/estrela-metade.svg">
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="images/pagina-inicial/portfolio01.jpg">
+                    <img src="images/pagina-inicial/portfolio02.jpg">
+                    <img src="images/pagina-inicial/portfolio03.jpg">
+                    <img src="images/pagina-inicial/portfolio04.jpg">
+                </div>
+            </div>
+            <div class="card-visualizacao">
+                <div class="circulo"></div>
+                <div class="circulo atual"></div>
+                <div class="circulo"></div>
+                <div class="circulo"></div>
+            </div>
+        </section>
+        <section class="home-avaliacao">
+            <h2>Avaliações de usuários</h3>
+            <div class="seta" id="avaliacoes-seta-esq">
+                <img style="transform: rotate(180deg);" src="images/icones/seta.svg">
+            </div>
+            <div class="card card-1">
+                <div class="top">
+                    <div class="avaliacao-img">
+                        <img src="images/pagina-inicial/cliente01.jpg">
+                    </div>
+                    <div class="info">
+                        <h3 class="avaliacao-nome">Caio Lira</h3>
+                        <h4 class="avaliacao-cargo">Gerente de marketing</h4>
+                        <span class="avaliacao-qtd">23 produtos pedidos</span>
+                    </div>
+                </div>
+                <p class="avaliacao-comentario">"Já utilizei muitas vezes a Paleta e sempre gostei muito dos resultados! Meus pedidos são entendidos facilmente e geralmente não é necessária muita manutenção. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quibusdam sint, cum.”</p>
+            </div>
+            <div class="card card-2 hidden">
+                <div class="top">
+                    <div class="avaliacao-img">
+                        <img src="images/pagina-inicial/cliente01.jpg">
+                    </div>
+                    <div class="info">
+                        <h3 class="avaliacao-nome">Caio Lira</h3>
+                        <h4 class="avaliacao-cargo">Gerente de marketing</h4>
+                        <span class="avaliacao-qtd">23 produtos pedidos</span>
+                    </div>
+                </div>
+                <p class="avaliacao-comentario">"Já utilizei muitas vezes a Paleta e sempre gostei muito dos resultados! Meus pedidos são entendidos facilmente e geralmente não é necessária muita manutenção.</p>
+            </div>
+            <div class="card card-3 hidden">
+                <div class="top">
+                    <div class="avaliacao-img">
+                        <img src="images/pagina-inicial/cliente01.jpg">
+                    </div>
+                    <div class="info">
+                        <h3 class="avaliacao-nome">Caio Lira</h3>
+                        <h4 class="avaliacao-cargo">Gerente de marketing</h4>
+                        <span class="avaliacao-qtd">23 produtos pedidos</span>
+                    </div>
+                </div>
+                <p class="avaliacao-comentario">"Já utilizei muitas vezes a Paleta e sempre gostei muito dos resultados! Meus pedidos são entendidos facilmente e geralmente não é necessária muita manutenção.”</p>
+            </div>
+            <div class="seta" id="avaliacoes-seta-dir">
+                <img src="images/icones/seta.svg">
+            </div>
+        </section>
+        <section class="home-como-funciona">
+            <h1>Como funciona</h1>
+            <div class="passo">
+                <h2>01. Escolha um designer</h2>
+                <p>Temos diversos designers na nossa plataforma para que você consiga encontrar um que combine com você deseja.</p>
+                <div class="imagem">
+                    <img src="images/pagina-inicial/passo-01.png">
+                </div>
+            </div>
+            <div class="passo">
+                <h2>02. Faça o pedido</h2>
+                <p>Preencha um formulário com detalhes do seu pedido para que o designer consiga entender com maior precisão do que você precisa.</p>
+                <div class="imagem">
+                    <img src="images/pagina-inicial/passo-02.png">
+                </div>
+            </div>
+            <div class="passo">
+                <h2>03. Receba sua arte</h2>
+                <p>Agora basta esperar para receber a arte que deseja, podendo pedir até 3 alterações para o designer ou mais, dependendo do que vocês combinarem.</p>
+                <div class="imagem">
+                    <img src="images/pagina-inicial/passo-03.png">
+                </div>
+            </div>
+        </section>
+        <section class="rodape">
+            <p id="linhaRodape">Cadastrar <br> como designer</p>
+            <p id="linhaRodape">Cadastrar <br> como cliente </p>
+            <p id="linhaRodape">Entrar</p>
+            <p style="color: #888">Contato</p>
+            (11)11111-1111
+            <p style="color: #888">E-mail</p>
+            paleta@gmail.com
+        </section>
+        <section class="socials">
+            <div class="socialsBorder">
+                <img id="socialsImage" src="images/icones/twitter.svg" alt="Twitter">
+                <button class="btRodape">Twitter</button> <br>
+            </div>
+            <div class="socialsBorder">
+                <img id="socialsImage" src="images/icones/insta.svg" alt="Instagram">
+                <button class="btRodape">Instagram</button>
+            </div>
+            </section>
+        <footer>
+            <p>Paleta® - Todos os direitos <br> reservados ©</p>
+            <p style="font-size: 25px;">Paleta®</p>
+        </footer>
+    </body>
+</html>
